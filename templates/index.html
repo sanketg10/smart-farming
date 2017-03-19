@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <link rel=stylesheet type=text/css href="{{ url_for('static', filename='bootstrap.min.css') }}">
-<link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
-<link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+<!-- <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+ --><link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
 <script type="text/javascript" src="{{ url_for('static', filename='jquery.min.js') }}"></script>
 <script type="text/javascript" src="{{ url_for('static', filename='bootstrap.min.js') }}"></script>
 
@@ -36,8 +36,9 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#" style="font-size:25px;margin-left:10px">Smart-Farming</a>
+      <a class="navbar-brand" href="#" style="font-size:30px;margin-left:10px;font-family:cursive;font:italic bold Sans Serif;text-shadow: 4px 4px 4px #aaa;">Smart-Farming</a>
     </div>
+
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#">IoT Box</a></li>
@@ -70,15 +71,42 @@
   </div>
 </nav> -->
 
-<div class="container-fluid">
-<img src="/static/pictures/farming.jpg" class="img-rounded img-responsive" style="max-width:100%;
-background-size:cover;">
+<!-- <div class="container-fluid">
+<img src="/static/pictures/farming.jpg" class="img-rounded img-responsive">
+</div> -->
+
+<div class="image">
+      <img src="/static/pictures/farming.jpg" alt="" class="img-rounded img-responsive" style="max-width:100%;
+      background-size:cover;"/>
+
+<!--       <h2 class = "text-center" style="position: relative; top: -500px; left: 0; width: 100%;">Smart Farming: Utilizing the power of AI for better yields</h2> -->
 </div>
 
-  <div class = "col-md-6 col-sm-12 col-md-offset-1">
-    <h4> Use the power of data for smarter farming! </h4>
-    <h4> Our customers have shown upto 3x improvement in results</h4>
-  </div>
+<div class="row">
+<div class = "col-md-6 col-sm-12">
+<div class = "text-center" style="margin-top:20px">
+<h5> AI-Based Analysis for better results </h5>
+<h5> Graph from Sensor Data below-  </h5>
+</div>
+</div>
+
+<div class = "col-md-6 col-sm-12">
+<div class = "text-center" style="margin-top:20px">
+<h5> Based on sensor data, tomatoes and carrots recommended. </h5>
+<h5> Prediction for yield: 94% for carrots and 91% for tomatoes</h5>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="container-fluid col-md-6 col-sm-12" style="margin-top:30px">
+<img src="/static/pictures/Graphs/crop_response.png" class="img-thumbnail img-responsive">
+</div>
+
+<div class="container-fluid col-md-6 col-sm-12" style="margin-top:30px">
+<img src="/static/pictures/veggies.jpg" class="img-thumbnail img-responsive">
+</div>
+</div>
 
 
 </html>
